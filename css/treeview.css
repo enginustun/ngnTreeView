@@ -1,0 +1,98 @@
+/*ngnTreeView*/
+.tree-view {
+    padding: 0;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+    .tree-view ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .tree-view ul li.dd-close ul {
+            border-left: 1px dashed #0064e4;
+        }
+
+        .tree-view ul li {
+            border-bottom: 1px solid #eee;
+        }
+
+            .tree-view ul li li {
+                padding-left: 8px;
+                border-left-color: transparent;
+            }
+
+                .tree-view ul li li:first-child {
+                    border-top: 1px solid #eee;
+                }
+
+            .tree-view ul li div {
+                border-left: 1px dashed #0064e4;
+                width: 100%;
+                cursor: pointer;
+                padding: 5px;
+                display: block;
+                box-sizing: border-box;
+            }
+
+                .tree-view ul li div:hover {
+                    background: #f4f0ff;
+                }
+
+                .tree-view ul li div:before {
+                    content: '';
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    background: url('../images/collapse.png') no-repeat;
+                    margin-right: 10px;
+                }
+
+                .tree-view ul li div a:hover {
+                    text-decoration: underline;
+                }
+
+            .tree-view ul li.dd-close > div {
+                border-left: 1px dashed #0064e4;
+            }
+
+                .tree-view ul li.dd-close > div:before {
+                    margin-left: -1px;
+                    background: url('../images/expand.png') no-repeat;
+                }
+
+            .tree-view ul li div:hover:before {
+                opacity: 0.5;
+            }
+
+            .tree-view ul li div:only-child:before {
+                background: none;
+            }
+
+            .tree-view ul li div input[type="radio"] {
+                margin-left: 10px;
+            }
+
+.dd-close ul {
+    display: none;
+}
+
+.tree-view-processes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .tree-view-processes ul li {
+        padding: 6px;
+        border: 1px solid #ccc;
+        background: #f4f0ff;
+    }
+
+        .tree-view-processes ul li:first-child {
+            background: #ffd800;
+        }
+/*------------------------------------------------------------------------------------------*/

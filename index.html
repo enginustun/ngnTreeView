@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        ngn-tag-edit
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/treeview.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/treeview.js"></script>
+</head>
+<body>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-7">
+                <h3>ngnTreeView</h3>
+                <div class="ngn-treeview tree-view">
+                    <ul>
+                        <li>
+                            <div>
+                                <a>Item 1</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <a>Item 1.1</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a>Item 1.2</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a>Item 1.3</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dd-close">
+                            <div>
+                                <a>Item 2</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <a>Item 2.1</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a>Item 2.2</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a>Item 2.2.1</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Events</h3>
+                <div class="tree-view-processes">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+
+            $('.ngn-treeview').ngnTreeView();
+        });
+    </script>
+</body>
+</html>
